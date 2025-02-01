@@ -1,0 +1,26 @@
+{
+  "name": "backend-hiring-test",
+  "description": "This app is created as an assignment for BharatFD Backend Internship",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^8.5.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "mongoose": "^8.9.5",
+    "tinymce": "^7.6.1"
+  }
+}
