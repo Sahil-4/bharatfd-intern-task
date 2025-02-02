@@ -3,6 +3,7 @@ import express from "express";
 import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 import connectDB from "./db/connect.js";
+import useApiRoutes from "./routes/routes.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -21,7 +22,7 @@ app.use(
   express.static(path.join(__dirname, "../", "node_modules", "tinymce")),
 );
 
-// handle api routes here
+app.use("/api", useApiRoutes);
 
 // starting the server and db
 (async () => {
