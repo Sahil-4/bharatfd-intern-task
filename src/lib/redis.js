@@ -9,16 +9,16 @@ const redis = new Redis({
 });
 
 redis.on("connect", () => {
-  logger.info("redis connected");
+  console.info("redis connected");
 });
 
 redis.on("error", (error) => {
-  logger.error(error.message);
+  console.error(error.message);
 });
 
 process.on("SIGINT", () => {
   redis.quit(() => {
-    logger.info("redis connection closed");
+    console.info("redis connection closed");
     process.exit(0);
   });
 });
