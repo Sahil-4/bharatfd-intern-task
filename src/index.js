@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 import connectDB from "./db/connect.js";
 import useApiRoutes from "./routes/routes.js";
+import "./services/subscriber.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
