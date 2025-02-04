@@ -32,3 +32,10 @@ refs - [https://github.com/BharatFD/hiring/blob/main/backend.md](https://github.
    npm start
    ```
 2. Open your browser and navigate to `http://localhost:5000` to see the application running.
+
+## Using docker
+
+1. Start the app inside docker:
+   ```sh
+   docker-compose up
+   ```
