@@ -3,9 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQs | Home</title>
+    <title>FAQs | Admin Panel</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>FAQs</h1>
+    <h1>FAQs Forum</h1>
+
+    <div class="app">
+      <div class="editor__container">
+        <input
+          id="question"
+          type="text"
+          placeholder="Question"
+          value="my new question" />
+        <textarea id="editorTinymce">Answer</textarea>
+        <button id="postButton">Post</button>
+      </div>
+
+      <div id="faqsContainer" class="faqs__container">
+        <div class="faqs__fetch__form">
+          <input type="text" id="langChoice" value="en" />
+          <button id="fetchFAQsButton">Fetch</button>
+        </div>
+        <div class="faqs__list__container" id="faqsList">
+          <!-- all faqs will come inside this div -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="application/javascript"
+      src="/tinymce/tinymce.min.js"></script>
+    <script type="application/javascript" src="/my-tinymce-config.js"></script>
+    <script type="application/javascript" src="/main.js"></script>
   </body>
 </html>

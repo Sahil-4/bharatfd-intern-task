@@ -1,0 +1,100 @@
+/* Variables */
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --text-color: #fca311;
+  --accent-color: #e5e5e5;
+}
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+body {
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+
+._hidden_ {
+  display: none !important;
+}
+
+._flex_ {
+  display: flex;
+}
+
+._flex_center_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* app */
+
+.app {
+  display: flex;
+  align-items: flex-start;
+}
+
+.faqs__fetch__form > input,
+.faqs__fetch__form > button {
+  width: 360px;
+  height: 32px;
+}
+
+/* editor */
+
+.faqs__container,
+.editor__container {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto;
+}
+
+.editor__container > input {
+  width: 100%;
+  height: 42px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.editor__container > textarea {
+  width: 420px;
+  margin: 12px;
+}
+
+.editor__container > button {
+  width: 72px;
+  height: 42px;
+  margin: 4px;
+  padding: 4px;
+}
+
+/* faqs list */
