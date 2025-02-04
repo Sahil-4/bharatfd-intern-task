@@ -67,6 +67,9 @@ const processFAQ = async (faqId) => {
         question: translatedQuestion,
         answer: translatedAnswer,
       });
+
+      // wait for 3 seconds before sending request to translation api again
+      await new Promise((resolve) => setTimeout(() => resolve, 1000 * 3));
     }
   } catch (error) {
     console.error("error processing FAQ:", error);
